@@ -9,6 +9,16 @@
   height: 100vh;
 }
 
+#my-body.blue {
+  background-color: hsl(0, 0%, 90%);
+}
+
+#my-body.dark {
+  background-color:  hsl(268, 75%, 9%);
+}
+
+
+
 /*calc main card style*/
 #card {
   display: flex;
@@ -32,13 +42,15 @@
 /*right part of the header style*/
 .right-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2.1fr 1fr;
   text-align: right;
 }
 
+/*theme title style*/
 .theme-t {
   font-size: 12px;
-  margin: auto;
+  margin: auto 0;
+    
 }
 
 /*toggle button groupe style*/
@@ -56,6 +68,7 @@
 .option-toggle {
   margin: auto 0;
   height: auto;
+  align-self: flex-end;
 }
 
 /*display of calc style */
@@ -66,6 +79,75 @@
   border-radius: 0.3rem;
   color: hsl(0, 0%, 100%);
 }
+
+/* buttons section style*/
+.buttons-display{
+  background-color: hsl(223, 31%, 20%);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0;
+
+}
+
+/*above buttons section style*/
+.above-b{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: right;
+}
+
+/* buttons style*/
+button{
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0.4rem;
+  border-radius: 0.3rem;
+  border:none !important;
+  padding: 0.5rem  1rem !important;
+  box-shadow: 0px 2px 0px hsl(28, 16%, 65%)!important;
+  transition: all 0.1s linear  !important;
+}
+
+button:hover{
+  transform: scale(1.03); 
+}
+
+button:active{
+  box-shadow: none !important;
+  opacity: 0.85;
+}
+
+/*bottom buttons section style*/
+.bottom-b{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  text-align: right;
+}
+
+/*DEL and RESET button style*/
+.two-button{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 2px 0px hsl(224, 28%, 35%)!important;
+  color: hsl(0, 0%, 100%)
+}
+
+.two-button:hover{
+  background-color:rgb(150, 176, 211);
+}
+
+/*equal button style */
+.equal-b{
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 2px 0px hsl(6, 70%, 34%)!important;
+  color: hsl(0, 0%, 100%)
+}
+
+.equal-b:hover{
+  background-color: hsl(6, 79%, 66%);;
+}
+
 
 /*frontend mentor footer style*/
 /*Feel free to remove these styles or customize in your own stylesheets 👍*/
